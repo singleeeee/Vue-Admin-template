@@ -5,9 +5,13 @@
 - [Vue3](https://vuejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
-- [Naive UI](https://www.naiveui.com/zh-CN/os-theme)
-- [TailwindCSS](https://tailwindcss.com/)
-- [vueuse](https://vueuse.org/) as utils
+- [Element Plus](https://element-plus.org/zh-CN/)
+- [VueUse](https://vueuse.org/) as utils
+- [Axios](https://www.axios-http.cn/)
+- [Pinia](https://pinia.vuejs.org/zh/)
+- [Vue Router](https://router.vuejs.org/zh/)
+
+
 
 ## before you start
 
@@ -16,7 +20,7 @@
 - strict requirements are placed on commit messages, for detailed rules please refer to the [commitlint.config.js](./commitlint.config.js)
 
 ## start up
-
+- `npm i pnpm -g`
 - `pnpm i`
 - `pnpm dev`
 
