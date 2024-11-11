@@ -12,8 +12,8 @@ const pathSrc = path.resolve(__dirname, 'src')
 export default defineConfig({
   resolve: {
     alias: {
-      '@': pathSrc,
-    },
+      '@': pathSrc
+    }
   },
   plugins: [
     vue(),
@@ -23,19 +23,19 @@ export default defineConfig({
 
       // 自动导入 Element Plus 相关函数，如：ElMessage, ElMessageBox... (带样式)
       resolvers: [
-        ElementPlusResolver(),
+        ElementPlusResolver()
       ],
 
-      dts: path.resolve(pathSrc, 'auto-imports.d.ts'),
+      dts: path.resolve(pathSrc, 'auto-imports.d.ts')
     }),
     Components({
       resolvers: [
         // 自动导入 Element Plus 组件
-        ElementPlusResolver(),
+        ElementPlusResolver()
       ],
 
-      dts: path.resolve(pathSrc, 'components.d.ts'),
-    }),
+      dts: path.resolve(pathSrc, 'components.d.ts')
+    })
   ],
   css: {
     preprocessorOptions: {

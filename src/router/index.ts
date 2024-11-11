@@ -12,12 +12,12 @@ const constantRoutes = [
       {
         path: 'dashboard',
         component: () => import('@/views/dashboard/index.vue'),
-        name: 'Dashboard',
+        name: 'Dashboard'
       },
       {
         path: 'hello',
         component: () => import('@/views/hello/index.vue'),
-        name: 'hello',
+        name: 'hello'
       }
     ]
   },
@@ -33,10 +33,9 @@ const constantRoutes = [
   }
 ]
 
-
 const router = createRouter({
-  history: createWebHistory(),  // 使用浏览器历史模式
-  routes: constantRoutes  
+  history: createWebHistory(), // 使用浏览器历史模式
+  routes: constantRoutes
 })
 
 export default router

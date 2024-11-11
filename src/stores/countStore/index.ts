@@ -12,5 +12,5 @@ export const useCountStore = defineStore('count', () => {
     setCount
   }
 }, {
-  persist: false,
+  persist: false
 })

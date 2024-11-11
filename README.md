@@ -11,8 +11,6 @@
 - [Pinia](https://pinia.vuejs.org/zh/)
 - [Vue Router](https://router.vuejs.org/zh/)
 
-
-
 ## before you start
 
 - make sure your node version is >= 18

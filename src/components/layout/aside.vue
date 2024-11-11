@@ -1,7 +1,7 @@
 <script setup>
 import {
-  SwitchButton,
-  Odometer
+  Odometer,
+  SwitchButton
 } from '@element-plus/icons-vue'
 
 const routers = [
@@ -12,35 +12,46 @@ const routers = [
     children: [
       {
         path: '/dashboard',
-        name: '公告板',
+        name: '公告板'
       },
       {
         path: '/hello',
-        name: 'hello',
+        name: 'hello'
       }
     ]
   },
   {
     icon: SwitchButton,
     path: '/login',
-    name: '登录',
-  },
+    name: '登录'
+  }
 ]
 </script>
 
 <template>
   <div class="container">
-    <el-menu class="menu" default-active="1">
-      <template v-for="(item, index) in routers">
+    <el-menu
+      class="menu"
+      default-active="1"
+    >
+      <template v-for="item in routers">
         <!-- 二级路由 -->
-        <el-sub-menu v-if="item.children" :index="item.index">
+        <el-sub-menu
+          v-if="item.children"
+          :key="item.path"
+          :index="item.path"
+        >
           <template #title>
             <el-icon>
-              <component :is="item.icon"></component>
+              <component :is="item.icon" />
             </el-icon>
             <span>{{ item.name }}</span>
           </template>
-          <router-link v-for="child in item.children" :to="child.path">
+          <router-link
+            v-for="child in item.children"
+            :key="child.path"
+            :to="child.path"
+          >
             <el-menu-item :index="child.path">
               {{ child.name }}
             </el-menu-item>
@@ -48,20 +59,23 @@ const routers = [
         </el-sub-menu>
 
         <!-- 一级路由 -->
-        <router-link v-else :to="item.path">
+        <router-link
+          v-else
+          :key="item"
+          :to="item.path"
+        >
           <el-menu-item :index="item.path">
             <el-icon>
-              <component :is="item.icon"></component>
+              <component :is="item.icon" />
             </el-icon>
             <span>{{ item.name }}</span>
           </el-menu-item>
         </router-link>
-
       </template>
     </el-menu>
   </div>
-
 </template>
+
 <style lang="scss" scoped>
 .container {
   display: flex;

@@ -23,7 +23,7 @@ export default {
     'type-enum': [
       2,
       'always',
-      ['ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'build', 'chore', 'revert', 'style', 'test'],
+      ['ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'build', 'chore', 'revert', 'style', 'test']
     ],
     'type-empty': [2, 'never'],
     'type-case': [0],
@@ -33,6 +33,6 @@ export default {
     'subject-full-stop': [0, 'never'],
     'subject-case': [0, 'never'],
 
-    'header-max-length': [0, 'always', 72], // header 最长72
-  },
+    'header-max-length': [0, 'always', 72] // header 最长72
+  }
 }

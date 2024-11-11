@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "node", // 确保是 "node" 或 "nodenext"
-    "baseUrl": ".", // 设置 baseUrl 为项目根目录
+  "compilerOptions": { // 设置 baseUrl 为项目根目录
     "target": "ES2020",
     "jsx": "preserve",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
     "lib": [
       "ES2020",
       "DOM",
       "DOM.Iterable"
     ],
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": true, // 确保是 "node" 或 "nodenext"
+    "baseUrl": ".",
     "module": "ESNext",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "references": [
     {

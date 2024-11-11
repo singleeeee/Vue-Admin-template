@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // 设置 baseUrl 为项目根目录
+    "composite": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler", // 设置 baseUrl 为项目根目录
     "paths": {
       "@/*": [
         "src/*"
       ] // 定义路径别名
     },
-    "composite": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true
   },

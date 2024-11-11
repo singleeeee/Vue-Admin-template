@@ -4,7 +4,7 @@ export default antfu({
   rules: {
     // 不允许使用tab缩进，vscode可以自行配置Tab键是使用\t还是空格填充
     'no-tabs': ['warn', {
-      allowIndentationTabs: true,
+      allowIndentationTabs: true
     }],
     // 允许最多一个空行
     'no-multiple-empty-lines': ['error', { max: 1 }],
@@ -24,18 +24,18 @@ export default antfu({
     'skipBlankLines': 0,
     'vue/html-indent': ['error', 2, {
       attribute: 1,
-      closeBracket: 0,
+      closeBracket: 0
     }],
     // 允许直接使用process全局变量
     'n/prefer-global/process': ['error', 'always'],
     // 设置一行最多一个属性
     'vue/max-attributes-per-line': ['error', {
       singleline: {
-        max: 1,
+        max: 1
       },
       multiline: {
-        max: 1,
-      },
+        max: 1
+      }
     }],
     // 允许不使用function声明函数
     'antfu/top-level-function': 'off',
@@ -45,6 +45,10 @@ export default antfu({
     '@typescript-eslint/no-use-before-define': 'off',
     // 右大括号和左大括号必须在同一行
     'style/brace-style': ['error', '1tbs', { allowSingleLine: false }],
-    '@stylistic/js/eol-last': ['error', 'always'],
-  },
+    // 关闭不允许使用ts-ignore注释
+    '@typescript-eslint/ban-ts-comment': 'off',
+    // 最后一个元素不加逗号
+    'style/comma-dangle': ['error', 'never']
+    // '@stylistic/js/eol-last': ['error', 'always'],
+  }
 })

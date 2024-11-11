@@ -4,10 +4,13 @@ import LayoutAside from '@/components/layout/aside.vue'
 
 <template>
   <el-container class="common-layout">
-    <el-header class="header"></el-header>
+    <el-header class="header" />
     <el-container>
-      <el-aside class="aside" width="200px">
-        <layout-aside />
+      <el-aside
+        class="aside"
+        width="200px"
+      >
+        <LayoutAside />
       </el-aside>
       <el-main>
         <router-view />
@@ -15,6 +18,7 @@ import LayoutAside from '@/components/layout/aside.vue'
     </el-container>
   </el-container>
 </template>
+
 <style lang="scss" scoped>
 .common-layout {
   min-height: 100vh;
