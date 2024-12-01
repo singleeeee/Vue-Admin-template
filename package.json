@@ -1,10 +1,10 @@
 {
-  "name": "achobeta-pluto-front",
+  "name": "achobeta_pluto_front",
   "type": "module",
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=18.0.0",
+    "node": ">=18.0.0"
   },
   "packageManager": "9.10.0",
   "scripts": {
